@@ -66,17 +66,16 @@ const palindromeVariantCheck = (date) => {
     let palindropmevariants = variantGenerator(date);
     let palindrome = false;
     let variantResults = [];
-    let testvar = [];
-    let testvartwo = [];
+   
     
     for (let i = 0; i < palindropmevariants.length; i++) {
         if (palindropmevariants[i] === stringreverser(palindropmevariants[i])) {
             variantResults.push(true);
-            testvartwo.push(stringreverser(palindropmevariants[i]));
+            
            
         } else {
             variantResults.push(false);
-            testvar.push(stringreverser(palindropmevariants[i]));
+            
             
         } 
 
@@ -92,8 +91,7 @@ const palindromeVariantCheck = (date) => {
         }
 
     }
-    console.log(testvar);
-    console.log(testvartwo);
+  
     console.log(variantResults);
 
     return palindrome;
@@ -133,7 +131,7 @@ const getnextdate = (date) => {
         
         if(leapyear(year)){ 
             if (day > 29) {
-               
+                
                 day = 1;
                 month++;
                 

@@ -98,17 +98,4 @@ button:hover{
   
   }
 
-  @media only screen and (max-width: 600px) {
-    .container {
-      
-      max-width: 100%;
-    }
-   
-    h1,input,button{
-        max-width: 100%;
-    }
-
-    .result{
-        max-width: 100%;
-    }
-  }
+  

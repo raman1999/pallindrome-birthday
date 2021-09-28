@@ -224,5 +224,7 @@ const clickhandler=() => {
 
 
 
-checker.addEventListener('click',()=>(clickhandler()));
+checker.addEventListener('click',clickhandler);
+
+
 

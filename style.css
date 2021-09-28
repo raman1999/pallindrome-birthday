@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
+:root{
+  --bgcolor:rgba(12,12,12,0.2);
+  --bodycolor:#3a6186; 
+  --inputcolor:#00adb5;
+}
 body{
     margin: 0;
     padding: 0;
-    background: #3a6186;  /* fallback for old browsers */
+    background: var(--bodycolor); /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #89253e, #3a6186); 
     
-
-   
-    
-  
 }
 
 
@@ -26,7 +26,7 @@ body{
 
 
 input {
-    border: 4px solid #00adb5;
+    border: 4px solid var(--inputcolor);
     
     outline: none;
     padding-left: 15px;
@@ -40,7 +40,7 @@ input {
     height: 10vh;
     outline: none;
     
-    border: 4px solid #00adb5;
+    border: 4px solid var(--inputcolor);
     border-radius: 2rem;
     
    font-size:1rem;
@@ -58,9 +58,9 @@ button:hover{
     width:60vh;
     height:10vh;
     border-radius: 2rem;
-    border: 4px solid #00adb5;
+    border: 4px solid var(--inputcolor);
     background-color: black;
-    color:white
+    color:white;
   }
 
   a {
@@ -75,7 +75,7 @@ button:hover{
   
   footer{
    
-    background-color: rgba(12,12,12,0.2);
+    background-color: var(--bgcolor);
     margin: 0;
     padding: 1rem;
     border-top-left-radius: 1rem;
